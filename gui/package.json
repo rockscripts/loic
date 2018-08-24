@@ -1,0 +1,32 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "Invite Users from a source to destination group",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build mac": "sudo electron-packager /home/rockscripts/Documents/BotGroup/gui/ BotGroup --overwrite --platform=linux --arch=x64 --icon=images/bot.png --prune=true --out=release-builds",
+    "build linux": "sudo electron-packager /home/rockscripts/Documents/BotGroup/gui/ BotGroup --platform=darwin  --arch=x64 --icon=images/bot.icns --prune=true --out=release-builds --overwrite"
+  },
+  "repository": "https://github.com/rockscripts/Telegram-Invite-Users-From-Source-To-Destination-Group",
+  "keywords": [
+    "telegram",
+    "invite friends"
+  ],
+  "author": "rockscripts",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^2.0.6",
+    "electron-builder": "^20.28.2",
+    "electron-packager": "^12.1.1"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "electron-debug": "^2.0.0",
+    "formbase": "^7.0.0",
+    "jquery": "^3.3.1",
+    "noty": "^3.2.0-beta",
+    "python-shell": "^0.5.0",
+    "xml2js": "^0.4.19"
+  }
+}

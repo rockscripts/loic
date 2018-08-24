@@ -1,0 +1,8 @@
+MAC OS
+sudo electron-packager /home/rockscripts/Documents/BotGroup/gui/ BotGroup --platform=darwin  --arch=x64 --icon=images/bot.icns --prune=true --out=release-builds --overwrite
+
+WINDOWS
+sudo electron-packager /home/rockscripts/Documents/BotGroup/gui/ BotGroup --overwrite  --platform=win32 --arch=ia32 --icon=images/bot.icon --prune=true --out=release-builds --version-string.CompanyName=ROCKSCRIPTS --version-string.FileDescription=CE --version-string.ProductName="BotGroup"
+
+LINUX
+sudo electron-packager /home/rockscripts/Documents/BotGroup/gui/ BotGroup --overwrite --asar=true --platform=linux --arch=x64 --icon=images/bot.png --prune=true --out=release-builds"
